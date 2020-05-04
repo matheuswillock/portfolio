@@ -5,29 +5,25 @@
     scroll-behavior: smooth;
 }
 body{
-    display: flex;
-    /*flex-direction: column;
-    flex-wrap: wrap;*/
+    display: flex;    
     flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
     height: 100vh;
 }
 header,footer{
     border:1px dashed green;
     background-color: rgba(0, 255, 0, 0.3);
-    width: 10%;
-    /*height: 10vh;*/
+    flex: 1 0 100%;
+    height: 10vh;
 }
 aside{
     border: 1px dashed red;
     background-color: rgba(255, 0, 0, 0.3);
-    width: 10%;
-    /*height: 10vh;*/
-}
+    flex: 1 1 20%;
+}    
 main{
     border: 1px dashed blue;
     background-color: rgba(0, 0, 255, 0.3);
-    width: 10%;
-    /*height: 10vh;*/
+    flex: 1 1 80%;
 }
